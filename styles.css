@@ -1,40 +1,13 @@
+*/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  
+  /* Base Styles */
   body {
     font-family: 'Geologica', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F0F8FF;
-    background-image: url('https://img.freepik.com/premium-vector/light-blue-background-with-elegant-stylized-white-flowers-corners-template-covers_619989-791.jpg?w=2000');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center;
-  }
-  .title-box {
-    background-color: #F0F8FF;
-    border-radius: 0;
-    width: 100%;
-    text-align: center;
-  }
-  #title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #296d98;
-    margin-top: 1rem;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Geologica', serif;
-    margin: 0;
-    padding: 0;
     background-color: #F0F8FF;
     background-image: url('https://img.freepik.com/premium-vector/light-blue-background-with-elegant-stylized-white-flowers-corners-template-covers_619989-791.jpg?w=2000');
     background-size: cover;
@@ -43,12 +16,28 @@
     text-align: center;
   }
   
+  /* Title Box Styling */
+  .title-box {
+    background-color: #F0F8FF;
+    border-radius: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Title */
   #title {
     font-size: 2rem;
     font-weight: bold;
     color: #296d98;
     margin-top: 1rem;
   }
+  
+  /* Header */
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
   header p {
     background-color: #F0F8FF;
     color: #296d98;
@@ -58,20 +47,16 @@
     margin-top: 0;
   }
   
-  
-  header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
+  /* Image Container */
   #img-div {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 1.5rem 0;
     justify-content: center;
+    margin: 1.5rem 0;
   }
   
+  /* Image */
   #image {
     width: 100%;
     max-width: 186.7px;
@@ -81,20 +66,23 @@
     margin: 0 auto;
   }
   
-  
+  /* Image Caption */
   #img-caption {
-    font-size: 18px;
+    font-size: 16px;
     color: #296d98;
-    margin-top: 0.5px;
+    margin-top: 0.5rem;
     border-radius: 12px;
     text-align: center;
     font-style: italic;
   }
+  
+  /* Tribute Info Section */
   #tribute-info {
     max-width: 900px;
     margin: 0 auto;
   }
   
+  /* Headings */
   h2 {
     text-align: center;
     font-size: 24px;
@@ -102,107 +90,7 @@
     margin-top: 2rem;
   }
   
-  
-  .timeline {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    color: #296d98;
-  }
-  
-  .timeline-event {
-    margin: 0 auto;
-  }
-  
-  .timeline-event h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5 rem;
-    color: #296d98
-  }
-  
-  .timeline-event p {
-    color: #296d98;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0 auto;
-  }
-  
-  
-  blockquote {
-    background: #F0F8FF;
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 800px;
-    color:#296d98 ;
-  }
-  
-  p {
-    font-weight: bold;
-    font-size: 16px;
-  }
-  .cta {
-    text-align: center;
-    background: #296d98;
-    padding: 1rem 0;
-  }
-  
-  .cta a {
-    color: #F0F8FF;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .cta a:hover {
-    color: black;
-  }
-  
-  .cta a:visited {
-    color: purple;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  #img-div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 1.5rem 0;
-    justify-content: center;
-  }
-  
-  #image {
-    width: 100%;
-    max-width: 186.7px;
-    height: auto;
-    border-radius: 20px;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  #img-caption {
-    font-size: 16px;
-    color: #296d98;
-    margin-top: 0.5px;
-    border-radius: 12px;
-    text-align: center;
-    font-style: italic;
-  }
-  #tribute-info {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 24px;
-    color: #192841;
-    margin-top: 2rem;
-  }
-  
-  
+  /* Timeline */
   .timeline {
     max-width: 800px;
     margin: auto;
@@ -217,7 +105,8 @@
   
   .timeline-event h3 {
     font-size: 1.25rem;
-    margin-bottom: 0 rem;
+    margin-bottom: 0.5rem;
+    color: #296d98;
   }
   
   .timeline-event p {
@@ -227,17 +116,22 @@
     margin: 0 auto;
   }
   
-  
+  /* Blockquote */
   blockquote {
     background: #F0F8FF;
     text-align: center;
-    color:#296d98; 
+    margin: 2rem auto;
+    max-width: 800px;
+    color: #296d98;
   }
   
+  /* Paragraphs */
   p {
     font-weight: bold;
     font-size: 16px;
   }
+  
+  /* Call to Action Section */
   .cta {
     text-align: center;
     background: #296d98;
@@ -257,3 +151,4 @@
   .cta a:visited {
     color: purple;
   }
+  
